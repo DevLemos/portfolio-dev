@@ -1,0 +1,44 @@
+:root {
+  /*Cores Principais*/
+  --color-primary: #6f8bbe;
+
+  /*Fundos*/
+  --bg-primary: #010407;
+  --bg-secondary: #030507;
+  --bg-card: #151724;
+  --bg-card-rgb: 21, 23, 36;
+
+  /*Borda*/
+  --border-color-rgb: 42, 47, 57;
+
+  /*Texto*/
+  --text-primary: #adbedd;
+  --text-secondary: #797979;
+
+  /*Tipografia*/
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --font-tertiary: "Inter", sans-serif;
+
+  /*Pesos*/
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /*Tamanhos*/
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-2xl: 2.5rem; /* 40px */
+  --font-size-3xl: 3.5rem; /* 56px */
+
+  /*Linha*/
+  --line-height-small: 1.2;
+  --line-height-medium: 1.4;
+  --line-height-large: 1.6;
+}

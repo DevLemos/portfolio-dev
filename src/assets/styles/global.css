@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+/* main {
+  padding-top: var(--navbar-height-desktop);
+} */
+
+/* padrão para todas as sections */
+section {
+  padding: 100px 10%;
+}
+
+/* textos */
+h1,
+h2,
+h3 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
