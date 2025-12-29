@@ -1,27 +1,40 @@
-import React from "react";
-import "./Navbar.css";
+import React from 'react';
+import Logo from '../../../../public/favicon.svg';
+import IconMenu from '../../img/menu.svg';
+import './Navbar.css';
 
-const Navbar = () => {
+export default function Navbar() {
   const links = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: 'Início', href: '#' },
+    { name: 'Sobre mim', href: '#sobremim' },
+    { name: 'Projetos', href: '#projetos' },
+    { name: 'Conhecimentos', href: '#conhecimentos' },
+    { name: 'Contato', href: '#contato' },
   ];
+
+  const [open, setOpen] = React.useState(false);
 
   return (
     <>
-      <nav className="navbar">
-        <ul className="nav-links">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a href={link.href}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <header className="navbar">
+        <img className="logo" src={Logo} alt="Logo K" />
+
+        <button className="btn-menu" onClick={() => setOpen(!open)}>
+          <img src={IconMenu} alt="Icone Menu" />
+        </button>
+
+        <nav className={`nav-links ${open ? 'open' : ''}`}>
+          <ul>
+            {links.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} onClick={() => setOpen(false)}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
     </>
   );
-};
-
-export default Navbar;
+}
