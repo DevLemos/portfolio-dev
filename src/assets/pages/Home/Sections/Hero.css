@@ -46,7 +46,7 @@
 
 .hero-image img {
   width: 100%;
-  max-width: 34rem;
+  max-width: 40rem;
 }
 
 @media (max-width: 768px) {
