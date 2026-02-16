@@ -1,12 +1,23 @@
 :root {
   /*Cores Principais*/
   --color-primary: #6f8bbe;
+  --color-secundary: #1f3151;
+  --color-tertiary: #1a202b;
+
+  --color-primary-rgb: 111, 139, 190;
 
   /*Fundos*/
   --bg-primary: #010407;
-  --bg-secondary: #030507;
+  --bg-secondary: #04060a;
+  --bg-primary-rgb: 1, 4, 7;
+  --bg-secondary-rgb: 3, 5, 7;
+
   --bg-card: #151724;
+  --bg-card-segundary: #2a2f39;
+  --bg-card-tertiary: #03050a;
+
   --bg-card-rgb: 21, 23, 36;
+  --bg-card-segundary-rgb: 42, 47, 57;
 
   /*Borda*/
   --border-color-rgb: 42, 47, 57;
@@ -14,6 +25,7 @@
   /*Texto*/
   --text-primary: #adbedd;
   --text-secondary: #797979;
+  --text-tertiary: #cad3e5;
 
   /*Tipografia*/
   --font-primary: "Poppins", sans-serif;

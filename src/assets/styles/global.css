@@ -5,20 +5,51 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 li {
   list-style: none;
 }
 
-/* main {
-  padding-top: var(--navbar-height-desktop);
-} */
-
 /* padrão para todas as sections */
 section {
-  padding: 5.25rem 10%;
+  padding: 5.25rem 0;
+}
+
+.projects-section h2 {
+  font-family: var(--font-tertiary);
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  margin-top: 4.25rem;
+  margin-bottom: 0.625rem;
+}
+
+/* .skills-section p,
+.projects-section p {
+  width: 100%;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5rem;
+  color: var(--text-secondary);
+  text-align: center;
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 /* textos */

@@ -1,0 +1,102 @@
+/* .skills-section {
+  background-color: aqua;
+} */
+
+.skills-section-title {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+}
+
+.skills-section-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 4.7rem;
+  border-bottom: 1px solid var(--text-primary);
+  left: 6.3rem;
+  margin-top: 0.625rem;
+}
+
+.skills-description-title {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-tertiary);
+  margin-bottom: 2rem;
+}
+
+.skills-line {
+  display: block;
+  width: 100%;
+  max-width: 4.7rem;
+  border-bottom: 1px solid var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.skills-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3.125rem;
+  gap: 1.2rem;
+}
+
+.skills-card {
+  display: flex;
+  padding: 1.5rem 2rem;
+  background-color: rgba(var(--bg-card-segundary-rgb), 0.36);
+  border: 1px solid rgba(var(--bg-card-segundary-rgb), 0.45);
+  border-radius: 1.25rem;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skills-card span {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-md);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.skills-card img {
+  width: 100%;
+  max-height: 5rem;
+  margin-top: 1rem;
+}
+
+.skills-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.5);
+}
+
+.skills-card-content .skills-card:nth-of-type(4) img {
+  max-height: 6rem;
+  margin: 0;
+}
+
+.skills-card-content .skills-card:nth-of-type(8) img {
+  max-height: 4rem;
+}
+
+.skills-card-content .skills-card:nth-of-type(8) {
+  height: 10.4rem;
+}
+
+@media (max-width: 375px) {
+  .skills-section h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  /* .skills-section p {
+    font-size: var(--font-size-sm);
+  } */
+
+  .skills-card-content {
+    grid-template-columns: 1fr;
+  }
+}
