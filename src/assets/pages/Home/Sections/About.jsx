@@ -1,4 +1,5 @@
-import PhotoAbout from "../../../img/img-kauan-2.svg";
+// import PhotoAbout from "../../../img/img-kauan-2.svg";
+import PhotoAbout from "../../../img/animacao-kauan.png";
 import CodeIcon from "../../../img/code-icon.svg";
 import UsersIcon from "../../../img/users-solid.svg";
 import RocketIcon from "../../../img/rocket-icon.svg";
@@ -51,20 +52,6 @@ const About = () => {
     },
   ];
 
-  const container = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0 },
-  };
-
   return (
     <>
       <motion.section
@@ -78,37 +65,45 @@ const About = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <div className="container">
-          <p className="about-section-title">Sobre Mim</p>
-          <span className="about-line"></span>
+          <div className="about-content">
+            <h2 className="about-description-title">
+              Um pouco sobre a minha história e o que me motiva<span>.</span>
+            </h2>
+            <div className="about-section-description">
+              {/* <h2 className="about-section-title">
+                Sobre mim<span>.</span>
+              </h2> */}
 
-          <p className="about-description-title">
-            Um pouco sobre a minha história e o que me motiva
-          </p>
-          <p className="about-description">
-            Me chamo Kauan Lemos, formado em Ciência da Computação pela Uninove
-            e Engenheiro de Software. Apaixonado por tecnologia e por
-            transformar ideias em soluções robustas e escaláveis. MInha jornada
-            no mundo da tecnologia começou com curiosidade e evoluiu para uma
-            paixão por criar experiências digitais que fazem a diferença.
-          </p>
+              <p className="about-description">
+                Me chamo Kauan Lemos, formado em Ciência da Computação pela
+                Uninove e Engenheiro de Software. Apaixonado por tecnologia e
+                por transformar ideias em soluções robustas e escaláveis. MInha
+                jornada no mundo da tecnologia começou com curiosidade e evoluiu
+                para uma paixão por criar experiências digitais que fazem a
+                diferença.
+              </p>
+            </div>
 
-          <img src={PhotoAbout} alt="Foto minha" />
+            <div className="about-image">
+              <img src={PhotoAbout} alt="Foto minha" />
+            </div>
 
-          <div className="about-cards-content">
-            {cards.map((card) => (
-              <div key={card.id} className="about-card">
-                <div className="about-card-header">
-                  <div
-                    className="about-card-icon"
-                    style={{ backgroundColor: card.CorIcone }}
-                  >
-                    <img src={card.CaminhoIcon} alt={card.TextoAlternativo} />
+            <div className="about-cards-content">
+              {cards.map((card) => (
+                <div key={card.id} className="about-card">
+                  <div className="about-card-header">
+                    <div
+                      className="about-card-icon"
+                      style={{ backgroundColor: card.CorIcone }}
+                    >
+                      <img src={card.CaminhoIcon} alt={card.TextoAlternativo} />
+                    </div>
+                    <h3>{card.Titulo}</h3>
                   </div>
-                  <h3>{card.Titulo}</h3>
+                  <p>{card.Descricao}</p>
                 </div>
-                <p>{card.Descricao}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </motion.section>

@@ -1,5 +1,5 @@
 .hero-section {
-  height: 100vh;
+  height: 100%;
 }
 
 .hero-section h3 {
@@ -84,11 +84,44 @@
   padding: 0.425rem;
   display: block;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
 }
 
-.hero-contact a:hover {
-  transform: translateY(-5px);
+.hero-contact ul a img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.hero-contact ul a img:hover {
+  transform: scale(1.15);
+}
+
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 60px;
+  overflow: hidden;
+}
+
+.hero-scroll a img {
+  animation: bounce 2.2s ease-in-out infinite;
+}
+
+/* .hero-scroll a img::hover {
+  color: rosybrown;
+} */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* opacity: 0.9; */
+  }
+
+  50% {
+    transform: translateY(-8px);
+    opacity: 0.4;
+  }
 }
 
 /* .mouse {
@@ -108,50 +141,65 @@
   border-radius: 2px;
 } */
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: 115vh;
-  }
-
+@media (min-width: 320px) {
   .hero-content {
     flex-direction: column;
     margin-top: 5rem;
     gap: 3rem;
-    align-items: flex-start;
+    align-items: center;
   }
-}
-
-@media (max-width: 425px) {
   .hero-content h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
   }
-
   .hero-content h1 {
     font-size: var(--font-size-xl);
   }
-
   .hero-content p {
     margin-top: 0.625rem;
+    max-width: 35rem;
     font-size: var(--font-size-base);
   }
-
   .hero-contact a:hover {
     transform: none;
   }
-
-  .hero-section {
-    height: 100vh;
+  .logo {
+    height: 2.6rem;
   }
-
-  /* .hero-decoration {
-    display: none;
-  } */
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-content h3 {
+    font-size: var(--font-size-xl);
+  }
+  .hero-content h1 {
+    font-size: var(--font-size-2xl);
+  }
+  .hero-content p {
+    margin-top: 0.625rem;
+    max-width: 40rem;
+    font-size: var(--font-size-md);
+  }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 1024px) {
+  .hero-content {
+    flex-direction: row;
+    margin-top: 5rem;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+/* @media (max-width: 1440px) {
+} */
+
+/* @media (max-width: 320px) {
   .hero-description h3 {
     font-size: var(--font-size-lg);
   }
@@ -159,4 +207,4 @@
   .hero-image img {
     margin-top: -1rem;
   }
-}
+} */

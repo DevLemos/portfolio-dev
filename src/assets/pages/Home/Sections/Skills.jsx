@@ -72,7 +72,6 @@ const Skills = () => {
       <section className="skills-section">
         <div className="container">
           <p className="skills-section-title">Habilidades</p>
-          <span className="skills-line"></span>
           {/* <h2>Habilidades</h2> */}
           <p className="skills-description-title">
             Tecnologias e ferramentas que domino e utilizo no dia a dia para

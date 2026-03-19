@@ -44,7 +44,6 @@ const Projects = () => {
       <section className="projects-section">
         <div className="container">
           <p className="projects-section-title">Projetos</p>
-          <span className="projects-line"></span>
           <p className="projects-description-title">
             Alguns dos projetos que desenvolvi recentemente. Cada um com seus
             desafios únicos e soluções criativas.

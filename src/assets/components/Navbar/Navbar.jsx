@@ -6,10 +6,11 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const links = [
-    { name: "Início", href: "#" },
-    { name: "Sobre mim", href: "#sobremim" },
+    { name: "Home", href: "#home" },
+    { name: "Sobre", href: "#sobremim" },
+    { name: "Experiências", href: "#experiencias" },
+    { name: "Skills", href: "#skills" },
     { name: "Projetos", href: "#projetos" },
-    { name: "Conhecimentos", href: "#conhecimentos" },
     { name: "Contato", href: "#contato" },
   ];
 

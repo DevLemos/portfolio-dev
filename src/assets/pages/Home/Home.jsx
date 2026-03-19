@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Sections/Hero.jsx";
+import Experience from "./Sections/Experience.jsx";
 import About from "./Sections/About.jsx";
 import Skills from "./Sections/Skills.jsx";
 import Projects from "./Sections/Projects.jsx";
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Experience />
       <About />
       <Skills />
       <Projects />

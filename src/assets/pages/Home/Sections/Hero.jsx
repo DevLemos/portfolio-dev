@@ -4,7 +4,7 @@ import HeroImage from "../../../img/img-main.svg";
 import LinkedinIcon from "../../../img/linkedin-icon.svg";
 import GitHubIcon from "../../../img/github-icon.svg";
 import FileIcon from "../../../img/file-arrow-down.svg";
-import ArrowIcon from "../../../img/arrow-down-solid-full.svg";
+import AnglesDownIcon from "../../../img/angles-down-solid-full.svg";
 import "./Hero.css";
 
 const Hero = () => {
@@ -78,6 +78,12 @@ const Hero = () => {
               }}
             />
           </div> */}
+          </div>
+
+          <div className="hero-scroll">
+            <a href="#about" aria-label="Rolar para seção sobre">
+              <img src={AnglesDownIcon} style={{ width: 24 }} />
+            </a>
           </div>
         </div>
       </motion.section>
