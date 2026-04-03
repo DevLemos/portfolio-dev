@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import HeroImage from "../../../img/img-main.svg";
 import LinkedinIcon from "../../../img/linkedin-icon.svg";
 import GitHubIcon from "../../../img/github-icon.svg";
@@ -26,6 +27,7 @@ const Hero = () => {
   return (
     <>
       <motion.section
+        id="home"
         className="hero-section"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -81,9 +83,9 @@ const Hero = () => {
           </div>
 
           <div className="hero-scroll">
-            <a href="#about" aria-label="Rolar para seção sobre">
+            <Link to="/#experiencias" aria-label="Rolar para seção sobre">
               <img src={AnglesDownIcon} style={{ width: 24 }} />
-            </a>
+            </Link>
           </div>
         </div>
       </motion.section>
